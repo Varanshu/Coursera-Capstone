@@ -15,19 +15,7 @@ body{
 h1,h2,h3,h4,h5{
   color: black;
 }
-/* .about{
-  background-image: linear-gradient(#595959,#cccccc);
-}
-.projects{
-  background-image: linear-gradient(#595959,#cccccc);
-}
-.certificates{
-    background-image: linear-gradient(#cccccc,#595959);
-}
 
-.contact{
-    background-image: linear-gradient(#cccccc,#595959);
-} */
 
 header{
   background-image: linear-gradient(#cccccc,#595959);
@@ -140,6 +128,9 @@ hr {
   border: 0;
   height: 1px;
 }
+
+/* Certificates */
+
 .certificate{
   align-items: center;
 }
