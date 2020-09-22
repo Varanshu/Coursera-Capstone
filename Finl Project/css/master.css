@@ -8,7 +8,7 @@ html {
 body{
   background-image: linear-gradient(#595959,#cccccc,#595959,#cccccc,#595959,#cccccc);
 }
-.section1{
+#home{
   margin: 0 10%;
 }
 
@@ -17,9 +17,6 @@ h1,h2,h3,h4,h5{
 }
 
 
-header{
-  background-image: linear-gradient(#cccccc,#595959);
-}
 .intro {
   width: 100%;
   max-width: 90rem;
@@ -33,45 +30,111 @@ header{
 }
 
 /* Navigation Links */
-.navigation{
-  padding: 10px;
-  background-image: linear-gradient(to right,#cccccc,#595959);
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+
+nav{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
   position: sticky;
   top: 0px;
   z-index: 1;
-}
+  background-color: rgba(38,38,38,0.9);
 
-nav{
-  min-height: 10vh;
-  margin: auto;
-  width: 90%;
+}
+.logo{
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.nav-links{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 35%;
 }
 
-nav h3, nav ul{
-  font-size: 1.5rem;
-  flex: 1;
-}
-nav ul{
+.nav-links li{
   list-style: none;
-  display: flex;
-  justify-content: space-between;
 }
 
-nav a{
-  color: black;
+.nav-links a{
+  color: rgb(226,226,226);
   text-decoration: none;
-
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
 }
-.bubble{
-  border-radius: 25px;
-  position: absolute;
-  z-index: -2;
-  background: #a6a6a6;
-  transform: scale(2);
+
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: white;
+}
+@media screen and (max-width:1024px) {
+  .nav-links{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgba(38,38,38,0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    opacity: 0;
+
+  }
+  .burger{
+    display: block;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
 }
 
 main{
@@ -129,6 +192,8 @@ hr {
   height: 1px;
 }
 
+
+
 /* Certificates */
 
 .certificate{
@@ -147,6 +212,7 @@ margin: 20px 0;
 }
 
 .card{
+  justify-content: center;
   color: black;
   margin: 20px 0;
   border-radius: 0;
@@ -175,8 +241,6 @@ margin: 20px 0;
   color: #fff;
 }
 
-/* abc.html */
-
 .certificate: #btn{
   text-align: center;
 }
@@ -199,6 +263,13 @@ margin: 20px 0;
     border: solid 3px #fff;
 }
 
+@media screen and (max-width:1024px){
+  #certificates .card{
+    padding: auto 0;
+    height: 200px;
+    width: 70%
+  }
+}
 /* Projet */
 .imageProject{
   overflow: hidden;
@@ -213,7 +284,9 @@ margin: 20px 0;
 .fa-github{
   margin-top: 10px;
 }
-
+.projectIcon{
+  padding: 5px 0;
+}
 
 /* Contact Form */
 .contacts .container{
@@ -239,7 +312,15 @@ margin-top: 30px;
   align-items: center;
   border-radius: 50%;
 }
-
+.github-green{
+  color: #33cc33 !important;
+}
+.youtube-red{
+  color: #ff0000 !important;
+}
+.black{
+  color: black !important;
+}
 .contacts .container .contactInfo .box .text{
   display: flex;
   margin-left: 20px;
@@ -301,4 +382,19 @@ margin-top: 30px;
   padding: 10px;
   font-size: 18px;
   border-radius: 10px;
+}
+
+@media(max-width:991px){
+  .contacts{
+    padding: 50px;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .container .contactInfo{
+    margin-bottom: 40px;
+  }
+  .container .contactInfo,.container .contactForm{
+    width: 100%
+  }
 }

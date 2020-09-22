@@ -20,9 +20,28 @@
 </head>
 
 <body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+      <h4>The Nav</h4>
+    </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+  </nav>
 
   <!-- Heading -->
 
+<section id="home">
   <header>
     <div class="section1">
       <div class="container">
@@ -31,26 +50,13 @@
           <h2>Full Stack Developer</h2>
           <h4>Computer Science Engineer</h4>
           <h4><i class="fas fa-code"></i> HTML . <i class="fab fa-css3"></i> CSS . <i class="fab fa-js-square"></i> JavaScript . <i class="fab fa-python"></i> Django . <i class="fab fa-node"></i> Node js</h4>
-          <button type="button" class="btn btn-outline-light" name="button">Contact Me</button>
         </div>
       </div>
     </div>
   </header>
-  <div class="navigation">
-    <nav>
-      <h3>Menu</h3>
-      <ul>
-        <li><a data-page="about" href="#about">Home</a></li>
-        <li><a data-page="certificates" href="#certificates">Certificate</a></li>
-        <li><a data-page="projects" href="#projects">Projects</a></li>
-        <li><a data-page="contact" href="#contact">Contact</a></li>
-        <div class="bubble">
-        </div>
-      </ul>
-    </nav>
-  </div>
-  <h1 id="zxcv"></h1>
-  <section data-index="0" id="about" class="about">
+</section>
+
+  <section id="about" class="about">
     <div class="container">
       <div class="about-img">
         <img src="images/photo.jpeg" alt="Chaoo Charles" class="about-pic" />
@@ -82,7 +88,7 @@
     <hr />
   </section>
 
-  <section data-index="1" id="certificates" class="certificates">
+  <section id="certificates" class="certificates">
     <div class="container my-3 py-5 text-center">
 
       <div class="row">
@@ -92,7 +98,6 @@
             <div class="card-body">
               <a href="https://www.coursera.org/account/accomplishments/certificate/43NZWBZ4AGDL">
                 <h2>Interactivity with JavaScript</h2>
-                <h3>Credentials: 43NZWBZ4AGDL</h3>
               </a>
             </div>
           </div>
@@ -183,7 +188,7 @@
             <img class="card-img-top card-image" src="images/coursera.png" alt="coursera">
             <div class="card-body">
               <a href="https://www.coursera.org/account/accomplishments/verify/5XV9JCE8Y3TU">
-                <h2>Internalional B2B (Business to Business) Marketing by Yonsei University</h2>
+                <h2>Internalional B2B Marketing by Yonsei University</h2>
               </a>
             </div>
           </div>
@@ -205,7 +210,7 @@
     <hr />
   </section>
 
-  <section data-index="2" id="projects" class="projects">
+  <section id="projects" class="projects">
     <div class="container my-3 py-5 text-center">
 
       <div class="row">
@@ -215,11 +220,10 @@
               <img class="card-img-top" src="images/simon.png" alt="Simon Game">
             </div>
             <div class="card-body">
-              <h2>Interactivity with JavaScript</h2>
-              <h3>Credentials: 43NZWBZ4AGDL</h3>
-              <i class="fas fa-code fa-3x"></i><i class="fab fa-css3 fa-3x"></i><i class="fab fa-js-square fa-3x"></i>
+              <h2>Simon Game</h2>
+              <i class="fas fa-code fa-2x projectIcon"></i><i class="fab fa-css3 fa-2x projectIcon"></i><i class="fab fa-js-square fa-2x"></i>
               <br>
-              <a href="https://github.com/Varanshu/Simple-HTML-Simon-Game"><i class="fab fa-github fa-2x"></i></a>
+              <a href="https://github.com/Varanshu/Simple-HTML-Simon-Game"><i class="fab fa-github fa-2x icon-cog github-green"></i></a>
             </div>
           </div>
         </div>
@@ -229,11 +233,10 @@
               <img class="card-img-top" src="images/todo_list.png" alt="TodoList">
             </div>
             <div class="card-body">
-              <h2>Interactivity with JavaScript</h2>
-              <h3>Credentials: 43NZWBZ4AGDL</h3>
-              <i class="fas fa-code fa-3x"></i><i class="fab fa-css3 fa-3x"></i><i class="fab fa-node fa-3x"></i>
+              <h2>Todo List</h2>
+              <i class="fas fa-code fa-2x projectIcon"></i><i class="fab fa-css3 fa-2x projectIcon"></i><i class="fab fa-node fa-2x projectIcon"></i>
               <br>
-              <a href="https://github.com/Varanshu/Node.js-Todolist"><i class="fab fa-github fa-2x"></i></a>
+              <a href="https://github.com/Varanshu/Node.js-Todolist"><i class="fab fa-github fa-2x icon-cog github-green"></i></a>
             </div>
           </div>
         </div>
@@ -243,12 +246,11 @@
               <img class="card-img-top" src="images/auction.png" alt="auction">
             </div>
             <div class="card-body">
-              <h2>Interactivity with JavaScript</h2>
-              <h3>Credentials: 43NZWBZ4AGDL</h3>
-              <i class="fas fa-code fa-3x"></i><i class="fab fa-css3 fa-3x"></i><i class="fab fa-python fa-3x"></i>
+              <h2>Auction Site</h2>
+              <i class="fas fa-code fa-2x projectIcon"></i><i class="fab fa-css3 fa-2x projectIcon"></i><i class="fab fa-python fa-2x projectIcon"></i>
               <br>
-              <a href="https://github.com/Varanshu/Django-Simple-SQL-auction-example"><i class="fab fa-github fa-2x"></i></a>
-              <a href="https://youtu.be/TyXjiQxlTMI"><i class="fab fa-youtube fa-2x"></i></a>
+              <a href="https://github.com/Varanshu/Django-Simple-SQL-auction-example"><i class="fab fa-github fa-2x icon-cog github-green projectIcon"></i></a>
+              <a href="https://youtu.be/TyXjiQxlTMI"><i class="fab fa-youtube fa-2x icon-cog youtube-red"></i></a>
             </div>
           </div>
         </div>
@@ -258,12 +260,11 @@
               <img class="card-img-top" src="images/wiki_django.png" alt="TodoList">
             </div>
             <div class="card-body">
-              <h2>Interactivity with JavaScript</h2>
-              <h3>Credentials: 43NZWBZ4AGDL</h3>
-              <i class="fas fa-code fa-3x"></i><i class="fab fa-css3 fa-3x"></i><i class="fab fa-python fa-3x"></i>
+              <h2>A Simple Django Site</h2>
+              <i class="fas fa-code fa-2x"></i><i class="fab fa-css3 fa-2x"></i><i class="fab fa-python fa-2x icon-cog"></i>
               <br>
-              <a href="https://github.com/Varanshu/Django-Simple-Example"><i class="fab fa-github fa-2x"></i></a>
-              <a href="https://youtu.be/YnxKGn-Fcak"><i class="fab fa-youtube fa-2x"></i></a>
+              <a href="https://github.com/Varanshu/Django-Simple-Example"><i class="fab fa-github fa-2x icon-cog github-green projectIcon"></i></a>
+              <a href="https://youtu.be/YnxKGn-Fcak"><i class="fab fa-youtube fa-2x icon-co youtube-red"></i></a>
             </div>
           </div>
         </div>
@@ -274,7 +275,7 @@
     <hr />
   </section>
 
-  <section data-index="3" id="contact" class="contact">
+  <section id="contact" class="contact">
     <div class="contacts">
       <h2>Contact Us</h2>
       <div class="container">
@@ -308,7 +309,7 @@
           </div>
           <div class="box">
             <div class="icon" style="margin-bottom:10px;">
-              <a href="https://github.com/Varanshu"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/Varanshu"><i class="fab fa-github icon-cog black"></i></a>
 
             </div>
             <div class="text">
@@ -317,7 +318,7 @@
           </div>
           <div class="box">
             <div class="icon" style="margin-bottom:10px;">
-              <a href="https://www.linkedin.com/in/varanshu-agrawal-3369ba14a/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/in/varanshu-agrawal-3369ba14a/"><i class="fab fa-linkedin-in icon-cog black"></i></a>
 
             </div>
             <div class="text">
@@ -326,7 +327,7 @@
           </div>
           <div class="box">
             <div class="icon">
-              <a href="https://www.instagram.com/varanshu_dragon_sin/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/varanshu_dragon_sin/"><i class="fab fa-instagram icon-cog black"></i></a>
 
             </div>
             <div class="text">
@@ -338,20 +339,18 @@
         <div class="contactForm">
           <h2>Send Message</h2>
           <div class="inputBox">
-            <input type="text" name="" placeholder="Full Name">
+            <input type="text" placeholder="Full Name">
           </div>
           <div class="inputBox">
-            <input type="text" name="" placeholder="Email">
+            <input type="text" placeholder="Email">
           </div>
           <div class="inputBox">
             <textarea name="name" rows="5" cols="30" placeholder="Type Your Message..."></textarea>
           </div>
           <div class="inputBox">
-            <input type="submit" name="" value="Send">
+            <input type="submit" value="Send">
           </div>
         </div>
-      </div>
-    </div>
       </div>
     </div>
     <footer></footer>
