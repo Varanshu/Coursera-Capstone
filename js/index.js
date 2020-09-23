@@ -4,8 +4,9 @@ $(document).ready(function() {
   $(".moreToggle").slice(0, 3).show();
   console.log($(this));
   $("#load").on('click', function() {
-    var a = 1;
     $(".moreToggle").slice(4).slideToggle();
+    $(".moreToggle").slice(4).toggleClass("d-flex");
+    $(".moreToggle").slice(4).toggleClass("align-items-stretch");
     if (bool) {
       console.log(bool);
       $("#load").text("Load Less");
