@@ -487,3 +487,10 @@ footer p{
   font-weight: lighter;
   text-decoration: underline;
 }
+
+.heading-h2{
+
+    font-size: 4rem;
+    margin-bottom: 20px;
+  font-family: 'Inconsolata', monospace;
+}
