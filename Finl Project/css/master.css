@@ -1,6 +1,8 @@
+
+
+
 html {
   font-size: 12px;
-  box-sizing: border-box;
   scroll-behavior: smooth;
   color: #e7e7e7;
   background: rgb(19, 19, 19);
@@ -8,24 +10,82 @@ html {
 body{
   background-image: linear-gradient(#595959,#cccccc,#595959,#cccccc,#595959,#cccccc);
 }
-#home{
-  margin: 0 10%;
-}
+
+
 
 h1,h2,h3,h4,h5{
   color: black;
 }
 
+.home{
 
-.intro {
   width: 100%;
-  max-width: 90rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  padding: 1%;
+  height: 80vh;
+  background: linear-gradient(
+      135deg,
+      rgba(0, 64, 77, 0.9) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  background-size: contain;
+  position: relative;
+}
+
+.section1{
+
+  width: 100%;
+  max-width: 58rem;
+  color: #fafafa;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-.heading h1,h2,h3,h4,h5{
+
+.section1 h1 {
+  letter-spacing: 1.2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  white-space: nowrap;
+  margin: auto;
+}
+.section1 h3{
+  font-size: 4rem;
+  margin: 1rem 0;
+  color: rgba(249, 105, 14, 1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.full{
+  background: linear-gradient(
+    to right,
+    rgba(249, 105, 14, 1) 0%,
+    rgba(102, 51, 153, 1) 100%
+    );
+}
+.cse{
+  background: linear-gradient(
+    to right,
+    rgba(102, 51, 153, 1) 0%,
+    rgba(249, 105, 14, 1) 100%
+  );
+
+}
+
+.section1 p{
+
+  text-transform: none;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5{
+  color: white;
   font-family: 'Grandstander', cursive;
 }
 
@@ -40,7 +100,11 @@ nav{
   position: sticky;
   top: 0px;
   z-index: 1;
-  background-color: rgba(38,38,38,0.9);
+  background-image: linear-gradient(
+      135deg,
+      rgba(0, 64, 77, 0.9) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
 
 }
 .logo{
@@ -93,7 +157,7 @@ nav{
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: rgba(38,38,38,0.9);
+    background-color: rgba(0, 64, 77, 0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,6 +204,8 @@ nav{
 main{
   margin: 0 10%;
 }
+/* Home Seection */
+
 
 /* About */
 
@@ -196,7 +262,8 @@ hr {
 
 /* Certificates */
 
-.certificate{
+.certificates{
+  height: 80vh
   align-items: center;
 }
 .certificate h1,h2{
@@ -397,4 +464,35 @@ margin-top: 30px;
   .container .contactInfo,.container .contactForm{
     width: 100%
   }
+}
+
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  position: sticky;
+  bottom: 0px;
+  z-index: 1;
+  background-image: linear-gradient(
+      135deg,
+      rgba(0, 64, 77, 0.9) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+
+}
+
+footer .footer-content{
+  color: #ccf6ff;
+  align-items: center;
+}
+
+footer a{
+  padding-left: 10px;
+}
+footer p{
+  padding: 0 auto;
+  font-weight: lighter;
+  text-decoration: underline;
 }
