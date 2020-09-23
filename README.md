@@ -1,6 +1,6 @@
 # Coursera-Capstone
 
-Uploaded Site is ![Varanshu Portfolio](http://varanshu-portfolio.netlify.app/)
+Uploaded Site is [Varanshu Portfolio](http://varanshu-portfolio.netlify.app/)
 
 Desktop Wireframe View
 ![Desktop Wireframe](https://github.com/Varanshu/Coursera-Capstone/blob/master/Coursera%20Uploads/Desktop.png)
