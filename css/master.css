@@ -327,13 +327,6 @@ margin: 20px 0;
     border: solid 3px #fff;
 }
 
-@media screen and (max-width:1024px){
-  #certificates .card{
-    padding: auto 0;
-    height: 200px;
-    width: 70%
-  }
-}
 /* Projet */
 .imageProject{
   overflow: hidden;
