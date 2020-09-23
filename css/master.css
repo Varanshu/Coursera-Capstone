@@ -142,13 +142,8 @@ nav{
   margin: 5px;
   background-color: white;
 }
-@media screen and (max-width:1024px) {
-  .nav-links{
-    width: 60%;
-  }
-}
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
   body{
     overflow-x: hidden;
   }
@@ -211,7 +206,7 @@ main{
 
 .about {
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   margin: auto;
 }
 
